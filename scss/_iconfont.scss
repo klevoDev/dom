@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "iconfont";
+  src: url("./../fonts/iconfont.woff2") format("woff2"), url("./../fonts/iconfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="_icon-"]::before,
+[class*=" _icon-"]::before,
+[class^="_icon-"]::after,
+[class*=" _icon-"]::after {
+  font-family: "iconfont";
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+._icon-bug:before {
+  content: "\e900";
+}
+._icon-layers:before {
+  content: "\e901";
+}
+// ._icon-cube:before {
+//   content: "\e902";
+// }
+._icon-cube::after {
+  content: "\e902";
+}

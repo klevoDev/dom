@@ -1,0 +1,25 @@
+// * ===== fonts ===== * //
+@import "_fonts";
+
+// * ===== null ===== * //
+@import "_variables";
+@import "_nullstyle";
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+// * ===== bem blocks ===== * //
+@import "_blocks";
+
+// * ===== header ===== * //
+@import "_header";
+
+// * ===== main ===== * //
+@import "_page";
+
+// * ===== all sections ===== * //
+@import "_start";
+
+// * ===== footer ===== * //
+@import "_footer";
