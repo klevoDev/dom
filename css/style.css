@@ -1,40 +1,15 @@
-@font-face {
-  font-display: swap;
-  font-family: "Gilroy";
-  src: url("./../fonts/Gilroy-Regular.woff2") format("woff2"), url("./../fonts/Gilroy-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
+.test {
+    text-align: center;
+    color: brown;
 }
 
-@font-face {
-  font-display: swap;
-  font-family: "Gilroy";
-  src: url("./../fonts/Gilroy-Bold.woff2") format("woff2"), url("./../fonts/Gilroy-Bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
+* {
+    margin: 0;
+    /* padding: 0;  */
+    border: none;
+    /* box-sizing: border-box; */
 }
 
-
-#text-1 {
-  color: brown
+p {
+    font-size: 24px;
 }
-
-/* .start__text {
-  color: red !important;
-} */
-
-.start__text {
-  color: blue;
-}
-
-p.start__text {
-  color: green;
-}
-
-._active {
-  font-size: 18px;
-  font-weight: bold;
-  color: coral;
-}
-
-

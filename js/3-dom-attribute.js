@@ -5,7 +5,7 @@ const buttonEl = document.querySelector('button');
 
 
 // * 1. Проверка на существование атрибута
-// inputlEl.hasAttribute('href')
+// inputlEl.hasAttribute('href') // возвращает true или false
 // inputlEl.value === 'tester'
 
 // * 2. Получить значение атрибута (READ)
@@ -18,7 +18,7 @@ console.log(inputlEl.getAttribute('value')); // null
 // * 3. Удаление (Delete)
 inputlEl.removeAttribute('class') // Удалить атрибут
 // inputEL.className = ''
-inputlEl.value = ''
+// inputlEl.value = ''
 
 // * 4. Изменить значение (UPDATE)
 inputlEl.setAttribute('value', '100') // Изменить первоначальное состояние
