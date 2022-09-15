@@ -51,5 +51,45 @@ const geomHeadingEl = subheadingElement.getBoundingClientRect();
 console.log(geomHeadingEl.top); // Растояние о текущей прокрутки до заголвка сверху
 console.log(geomHeadingEl.left);
 
-// * Прокрутка / scrool * //
+// * Прокрутка / scroll * //
 
+// * Получить текущее значение прокрутки окна браузера (насколько прокручен скролл) (px)
+
+console.log(window.pageYOffset);
+// ! При обновлении страницы скролл остаётся на месте
+
+
+// * Получить текущую прокрутку элемента
+console.log(testDiv.scrollLeft);
+console.log(testDiv.scrollTop);
+// ! При обновлении прокрутка возвращает на исходное состояние
+
+
+// testDiv.addEventListener('click', function (e) {
+//     testDiv.scrollBy(0, 10)
+//     console.log(testDiv.scrollLeft);
+//     console.log(testDiv.scrollTop);
+// });
+
+// * === Прокрутиться до опредлённого элемента === * //
+
+// Окна браузера / элемента
+// window.scrollBy() // Прокрутить скролл относительно текущей прокрутки
+// window.scrollTo() // Прокрутить скролл относительно начала сайта
+
+
+document
+    .querySelector('#test')
+    .addEventListener('click', function (e) {
+        window.scrollTo({
+            top: subheadingElement.getBoundingClientRect().top + window.pageYOffset,
+            behavior: "smooth"
+        })
+    });
+
+console.log(subheadingElement.getBoundingClientRect().top);
+console.log(window.pageYOffset);
+
+
+// ДЗ:
+// Реализовать в бургер меню переход по сслыкам к началу секции (там, где начинается background)
